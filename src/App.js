@@ -1,14 +1,13 @@
 // @flow
 import React, { Component } from 'react';
 import { Wrapper, Header, Logo, Intro } from './App.style';
-import logo from './logo.svg';
 
 class App extends Component {
   render() {
     return (
       <Wrapper>
         <Header>
-          <Logo src={logo} alt="logo" />
+          <Logo />
           <h2>Welcome to React</h2>
         </Header>
         <Intro>

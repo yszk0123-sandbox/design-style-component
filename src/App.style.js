@@ -1,5 +1,7 @@
 // @flow
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import logo from './logo.svg';
 
 export const Wrapper = styled.div`
   text-align: center;
@@ -21,7 +23,9 @@ const logoSpin = keyframes`
   }
 `;
 
-export const Logo = styled.img`
+const LogoImage = () => <img src={logo} alt="logo" />;
+
+export const Logo = styled(LogoImage)`
   animation: ${logoSpin} infinite 20s linear;
   height: 80px;
 `;
